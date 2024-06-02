@@ -1,10 +1,4 @@
-
 // Your Code Here
-
-const { json } = require("body-parser");
-const { query, application } = require("express");
-
-
 async function main() {
     let listBooks = await fetch('http://localhost:3001/listBooks')
     let listBooksJSON = await listBooks.json()
